@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(background.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    margin: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+    margin-left: 50px;
+}
+
+.nav_link {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 500px;
+    
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_link li a:hover {
+    color: rgb(38, 138, 237);
+}
+
+/*Search box */
+.search-box {
+    margin-top: 19px;
+    margin-left: 280px;
+    font-size: 20px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgba(14, 26, 101, 0.806);
+    background: transparent;
+    border-right: none;
+    color: white;
+    
+}
+
+.search-box:focus {
+    outline: none;
+}
+
+.search-button {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 19px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(36, 36, 138, 0.806);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    
+    
+}
+
+.search-button:hover {
+    opacity: 0.9;
+}
+
+.search-button:active {
+    opacity: 0.7;
+}
+
+/*for content*/
+
+.content-box {
+    display: inline-block;
+    width: 900px;
+    height: 600px;
+
+    margin-left: 50px;
+}
+
+.title {
+    color: white;
+    font-size: 35px;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 900px;
+    height: 200px;
+    padding-top: 90px;
+    display: block;
+}
+
+.text-effect {
+    color: rgb(53, 17, 130);
+}
+
+.content-text {
+    display: block;
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+}
+
+/* Join button */
+
+.join-button-container {
+    margin-top: 50px;
+}
+
+.join-button {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(36, 36, 138);
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.join-button:hover {
+    opacity: 0.5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.join-button:active {
+    opacity: 0.7;
+}
+
+/*Login*/
+
+.login-container {
+   
+    width: 500px;
+    height: 600px;
+    margin-left: 1000px;
+    margin-top: -550px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+
+.login-box {
+    background-color: rgba(56, 57, 58, 0.708);
+    height: 500px;
+    width: 400px;
+    display: block;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+ 
+.login-text-container{
+    font-family: Arial;
+    font-size: 40px;
+    display: flex;
+    font-weight: bold;
+    color: white;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.email-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 10px;
+    
+}
+
+.email {
+    font-family: Arial;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(165, 157, 157);
+    color: white; 
+}
+
+.email:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 10px;    
+}
+
+.password {
+    font-family: Arial;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(165, 157, 157);
+    color: white; 
+    letter-spacing: 1px;
+}
+
+.password:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.login-button {
+    font-family: Arial;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color:  rgb(36, 36, 138);
+    font-weight: 500;
+    width: 255px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: opacity 0.15s box-shadow 0.15s;
+}
+
+.login-button:hover{
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login-button:active{
+    opacity: 0.9;
+}
+
+.checkbox-container {
+    display: flex;
+ 
+    padding-left: 17px;
+    height: 30px;
+    align-items: center;
+    margin-left: 50px;
+    font-family: Arial;
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(221, 221, 221);
+}
+
+.fp-container{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(221, 221, 221);
+    cursor: pointer;
+
+}
+
+.fp-container:hover{
+    opacity: 0.7;
+}
+
+.fp-container:active{
+    opacity: 0.8;
+}
+
+@media screen and (min-width:1024px)
+{
+    
+}
+
+@media screen and (max-width:767px)
+{
+    
+}
+
+@media  screen and (min-width:767px) and (max-width:1023px)
+{
+    
+}
